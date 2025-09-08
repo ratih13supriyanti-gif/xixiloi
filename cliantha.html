@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Xixi Sayang</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body style="background-image: url(https://images.unsplash.com/photo-1530273973427-22351773250c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3w/foto/gunung-dan-awan-nqCoYoPG4R0);
+" 
+class="flex justify-center h-screen items-center"
+
+
+>
+<div class="bg-white border px-10 py-15 border-4 border-gray-300 shadow-blue-300 rounded-xl text-center animate__animated animate__tada m-8 w-80" 
+id="kartu">
+    <h1 class="text-3xl">Happy Birthday</h1>
+    <h1 class="text-4xl text-blue-500 font-bold animate__animated
+    animate__pulse animate__infinite">Xixi Loi (Kesayangan Ms Ratih)
+    <button 
+    class="p-2 bg-blue-600 text white text-2xl text-black rounded mt-5 hover: bg-blue-700 transition ease-in w-full animate__animated delay-1s animate__heartBeat" onclick="ubahKartu()"> Klik disini sayang!</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script>confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: 0.6 },
+});
+let kartu= document.getElementById('kartu')
+function ubahKartu() {
+    kartu.innerHTML= ` <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">Selamat ulang tahun sayang, semoga usia tahun ini dan tahun-tahun yang akan datang membawa segala kebaikan dan kebahagiaan yang layak untuk kamu dapatkan. Tetaplah jadi xixi yang luar biasa, Ms Ratih sayang xixi selalu...
+ </h1>
+<h2 class= mt-3 animate__animated animate__fadeIn>
+- Dari : Ms Ratih -
+</h2>
+<button 
+    class="p-2 bg-slate-600 text white text-2xl text-black rounded mt-5 hover: bg-slate-700 transition ease-in w-full animate__animated delay-1s animate__heartBeat" onclick="refresh()"
+    >
+     Tutup
+     </button>
+    `;
+    }
+   function refresh () {
+    location.reload ();
+   }
+</script>
+</body>
+</html>
